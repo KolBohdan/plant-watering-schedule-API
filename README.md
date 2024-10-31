@@ -15,6 +15,8 @@ Ensure you have `Python 3` installed.
 git clone https://github.com/KolBohdan/plant-watering-schedule-API
 cd plant-watering-schedule-API
 ```
+Specify Django root folder and settings as on screen:
+![settings](https://github.com/user-attachments/assets/6392c6c1-5681-4af4-8bee-bb56855fd546)
 
 For Windows users:
 ```bash
