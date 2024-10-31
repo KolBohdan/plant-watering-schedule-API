@@ -13,7 +13,7 @@ Ensure you have `Python 3` installed.
 #### Clone the repo:
 ```bash
 git clone https://github.com/KolBohdan/plant-watering-schedule-API
-cd library_api_service
+cd plant-watering-schedule-API
 ```
 
 For Windows users:
