@@ -14,8 +14,8 @@ class PlantViewSet(
 ):
     queryset = Plant.objects.all()
 
-
     def get_serializer_class(self):
         if self.action == "update":
             return PlantUpdateSerializer
+
         return PlantSerializer
