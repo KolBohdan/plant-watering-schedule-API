@@ -2,7 +2,7 @@ from rest_framework import viewsets, mixins
 
 
 from garden.models import Plant
-from garden.serializers import PlantSerializer
+from garden.serializers import PlantSerializer, PlantUpdateSerializer
 
 
 class PlantViewSet(
@@ -13,4 +13,9 @@ class PlantViewSet(
     viewsets.GenericViewSet
 ):
     queryset = Plant.objects.all()
-    serializer_class = PlantSerializer
+
+
+    def get_serializer_class(self):
+        if self.action == "update":
+            return PlantUpdateSerializer
+        return PlantSerializer
