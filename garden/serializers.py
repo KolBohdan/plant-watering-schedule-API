@@ -14,7 +14,7 @@ class PlantSerializer(serializers.ModelSerializer):
             "species",
             "watering_frequency_days",
             "last_watered_date",
-            "is_watered"
+            "is_watered",
         )
 
 
@@ -33,7 +33,7 @@ class PlantMarkAsWateredSerializer(serializers.ModelSerializer):
             "species",
             "watering_frequency_days",
             "last_watered_date",
-            "is_watered"
+            "is_watered",
         )
         read_only_fields = fields
 

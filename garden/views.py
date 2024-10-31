@@ -5,7 +5,11 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 
 from garden.models import Plant
-from garden.serializers import PlantSerializer, PlantUpdateSerializer, PlantMarkAsWateredSerializer
+from garden.serializers import (
+    PlantSerializer,
+    PlantUpdateSerializer,
+    PlantMarkAsWateredSerializer,
+)
 
 
 class PlantViewSet(
@@ -13,7 +17,7 @@ class PlantViewSet(
     mixins.CreateModelMixin,
     mixins.RetrieveModelMixin,
     mixins.UpdateModelMixin,
-    viewsets.GenericViewSet
+    viewsets.GenericViewSet,
 ):
     queryset = Plant.objects.all()
 

@@ -22,7 +22,7 @@ def sample_plant(**params) -> Plant:
         "name": "rose",
         "species": "flower",
         "watering_frequency_days": 5,
-        "last_watered_date": datetime.date(2024, 10, 5)
+        "last_watered_date": datetime.date(2024, 10, 5),
     }
     defaults.update(params)
 
